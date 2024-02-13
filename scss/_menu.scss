@@ -1,0 +1,35 @@
+/*? ------------------------------------- CSS MENU.HTML ------------------------------------- */
+
+.menu {
+  width: 90%;
+  margin: auto;
+  max-width: 1920px;
+  text-align: center;
+}
+
+.menu__image {
+  width: 80%;
+  margin: 25px;
+  border: 3px solid map-get($map: $colorPalette, $key: "borderWheat");
+}
+
+.menu__headings {
+  border-radius: 15px 15px 0 0;
+}
+
+.menu__beer-container {
+  background: url("../images/beer-taps.jpeg");
+  background-size: cover;
+  background-position-x: 30%;
+}
+
+.menu__pizza-container {
+  background: url("../images/pizza.jpeg");
+  background-size: cover;
+}
+
+.menu__beer-container,
+.menu__pizza-container {
+  border-radius: 15px;
+  margin-bottom: 50px;
+}

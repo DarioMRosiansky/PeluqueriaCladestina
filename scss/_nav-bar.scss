@@ -1,0 +1,55 @@
+/* --------------------------- NAV BAR ---------------------------*/
+
+nav {
+  margin-bottom: 50px;
+
+  .nav-bar__list-item {
+    text-align: center;
+    font-family: $fontTourney;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px map-get($map: $colorPalette, $key: "purple");
+    height: 40px;
+    &:not(:last-child) {
+      border-bottom: 2px solid rgba(255, 255, 255, 0.411);
+    }
+  }
+  .nav-bar__links-list {
+    a {
+      text-decoration: none;
+      color: inherit;
+      &:visited {
+        text-decoration: none;
+        color: inherit;
+      }
+      &:hover {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  }
+}
+
+.nav-bar__icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: url("../images/hamburguer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  opacity: 0.7;
+}
+
+.nav-bar__logo {
+  width: 40px;
+  height: 40px;
+}
+
+.toggler-icon--color {
+  border: 2.5px solid map-get($map: $colorPalette, $key: "white");
+}
+
+.nav-bar__bg-color {
+  background: map-get($map: $colorPalette, $key: "darkBlack");
+}

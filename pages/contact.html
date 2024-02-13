@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shorcut icon" type="image/jpg" href="../images/fav-icon.jpg" />
+    <title>Contactos | Cam Pelu Clandestina</title>
+  <link rel="icon" type="image/jpg" href="../images/tijeraicon.jpg">
+  <meta name="description"
+    content="cam pelu clandestina es una peluqueria audaz, moderna, feminista y emponderadisima en el barrio de Villa Crespo. Hacemos cortes y colores con un equipe fantastique" />
+  <meta name="keywords" content="Peluqueria, Colores, Peinados, Make Up, Amor" />
+  <meta name="author" content="Dario Marcelo Rosiansky" />
+</head>
+
+<body>
+
+    <!--? ---------------------------- HEADER ---------------------------- -->
+
+    <header>
+        <div class="header-container">
+            <h2 class="header__updown">
+                Cam- <br />
+                Pelu
+            </h2>
+            <p class="header__location">Villa Crespo</p>
+            <div>
+                <p class="header__insert-coin"> Inserta <a href="#contact"><img src="../images/up-down-logo.png"
+                            class="header__img--size" alt="foto"></a> Fichin </p>
+            </div>
+        </div>
+    </header>
+
+    <!--? ---------------------------- NAV BAR ---------------------------- -->
+
+    <nav class="navbar sticky-top navbar-expand-lg nav-bar__bg-color" id="contact">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html#home"><img src="../images/up-down-logo.png"
+                    class="nav-bar__logo" alt="foto"></a>
+            <button class="navbar-toggler toggler-icon--color" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="nav-bar__icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 nav-bar__links-list">
+                    <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
+                        <a aria-current="page" href="../index.html#home">INICIO</a>
+                    </li>
+                    <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
+                        <a href="./events.html#events">TURNOS TOMADOS</a>
+                    </li>
+                    <li class="nav-item nav-bar__list-item nav-bar__list-item--not-current">
+                        <a href="./gallery.html#gallery">FOTOS</a>
+                    </li>
+                    <li class="nav-item nav-bar__list-item nav-bar__list-item--current">
+                        <a href="./contact.html#contact">CONTACTOS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--? ---------------------------- CONTENT ---------------------------- -->
+
+    <main class="contact-us__contenedor">
+        <h1 class="headline-pages contact-heading">Contactos</h1>
+        <div class="contact-us__box">
+            <div class="contact-us__left"></div>
+            <div class="contact-us__right">
+                <h2 class="contact-us__heading">Contacto / Recomendaciones / Quejas</h2>
+                <form action="./error404.html">
+
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="Tu Nombre" class="contact-us__field" id="name" />
+
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Tu Email" class="contact-us__field" id="email" />
+
+                    <label for="phone-number">Telefono</label>
+                    <input type="tel" placeholder="Tu Telefono" class="contact-us__field" id="phone-number" />
+
+                    <label for="city">De Donde sos?:</label>
+
+                    <select class="contact-us__city-select" name="city" id="city">
+                        <option value="" disabled selected hidden>--Selecciona--</option>
+                        <option value="minneapolis">CABA</option>
+                        <option value="desMoines">GBA</option>
+                        <option value="kansasCity">Cordoba</option>
+                        <option value="milwaukee">Santa Fe</option>
+                        <option value="stLouis">Santiago Del Estero</option>
+                        <option value="nashville">San Luis</option>
+                        <option value="oklahomaCity">Mendoza</option>
+                    </select>
+
+                    <fieldset class="contact-us__fieldset">
+                        <legend>Me Gustaria:</legend>
+                        <label for="beers">Cortarme El Pelo</label>
+                        <input type="checkbox" id="beers" value="more-beers">
+                        <label for="games">Teñirme</label>
+                        <input type="checkbox" id="games" value="more-games">
+                        <label for="pizzas">Peinarme</label>
+                        <input type="checkbox" id="pizzas" value="more-pizzas">
+                    </fieldset>
+
+
+
+                    <label for="text-area">Mensaje</label>
+                    <textarea placeholder="Mensaje" class="contact-us__field contact-us__area"
+                        id="text-area"></textarea>
+
+                    <label class="contact-us__subscribe" for="yes-no-subscribe">Subcribirse</label>
+
+                    <input type="radio" name="yes-no" value="yes," /> Si
+                    <input class="contact-us__subscribe--br" type="radio" name="yes-no" value="no" /> No
+
+
+                    <input type="submit" value="Enviar" class="contact-us__btn--submit" />
+                    <input type="reset" value="Cancelar" class="contact-us__btn--cancel" />
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <!--? ---------------------------- FOOTER ---------------------------- -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__content">
+          <h3 class="footer__heading">Cam Pelu Clandestina</h3>
+          <p class="footer__social-parrafo">Seguinos en Instagram</p>
+          <ul class="footer__list-social">
+            <li class="footer___list-item">
+              <a href="https://www.instagram.com/cam_pelu_clandestina/" target="_blank"><i
+                  class="footer__list-icon fa-brands fa-instagram"></i></a>
+            </li>
+  
+          </ul>
+        </div>
+  
+        <div class="footer__hours">
+          <h3 class="footer__headings">Atendemos:</h3>
+          <p class="footer__parrafos">
+            
+            <table>
+              <thead>
+                  <tr>
+                      <th>Día</th>
+                      <th>Horario</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Martes a Jueves</td>
+                      <td>12h ~ 19h</td>
+                  </tr>
+                  <tr>
+                      <td>Viernes</td>
+                      <td>12h ~ 20h</td>
+                  </tr>
+                  <tr>
+                      <td>Sabado</td>
+                      <td>13h ~ 20h</td>
+                  </tr>
+              </tbody>
+          </table>
+          </p>
+        </div>
+  
+        <div class="footer__contact">
+          <h3 class="footer__headings">Contacto</h3>
+          <p class="footer__parrafos">
+            Tenes una pregunta? <br />
+            consulta al inbox de Instagram
+          </p>
+        </div>
+        <div class="footer__address">
+          <h3 class="footer__headings">Direccion </h3>
+          <p class="footer__parrafos">
+            Av. Warnes 423 <br />
+            CABA Argentina
+  
+          </p>
+        </div>
+  
+        <div class="footer__iframe-location">
+          <iframe src="https://maps.google.com/maps?q=AV%20WARNES%20423&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600"
+            height="250" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+  
+      <div class="footer__bottom">
+        <p class="footer__copyright-parrafo">
+          Copyright &copy2022 Cam Pelu Clandestina. designed by
+          <span class="footer__author"> Dario Marcelo Rosiansky</span>
+        </p>
+        <p>
+          <a href="./pages/privacy-policy.html" target="_blank" class="privacy-policy__link">Privacy Policy</a>
+        </p>
+      </div>
+    </footer>
+  
+      <!--? ---------------------------- SCRIPTS ---------------------------- -->
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/394293560f.js" crossorigin="anonymous"></script>
+      <script src="./scripts/script.js"></script>
+      <script src="./scripts/wow.min.js"></script>
+      <script>
+        new WOW().init();
+      </script>
+    </body>
+    
+    </html>

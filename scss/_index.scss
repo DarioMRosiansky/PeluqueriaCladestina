@@ -1,0 +1,133 @@
+/*? ------------------------------------- CSS INDEX.HTML ------------------------------------- */
+/* --------------------------- SECTION I --------------------------- */
+
+.article-one {
+  background: map-get($map: $colorPalette, $key: "lightBlack");
+  width: 95%;
+  max-width: 1700px;
+  height: auto;
+  margin: 0 auto 150px;
+  padding: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  gap: 3rem;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 50px;
+}
+
+.article-one-subhead {
+  font-size: 3rem;
+  text-shadow: 5px 2px map-get($map: $colorPalette, $key: "purple");
+  color: map-get($map: $colorPalette, $key: "white");
+  border-left: 3px solid map-get($map: $colorPalette, $key: "magenta");
+  border-right: 3px solid map-get($map: $colorPalette, $key: "cyan");
+  padding: 0 15px;
+  text-align: center;
+  order: 1;
+  .span-subhead {
+    color: #32d8e0;
+    text-decoration: underline;
+  }
+}
+
+[class*="parrafo-"] {
+  font-size: 1.4em;
+  color: map-get($map: $colorPalette, $key: "text");
+  text-shadow: 1px 1px map-get($map: $colorPalette, $key: "purple");
+  padding: 25px;
+  box-shadow: -3px 1px 10px map-get($map: $colorPalette, $key: "cyan");
+  border-radius: 12px;
+  margin: auto;
+  text-align: center;
+}
+
+.parrafo-one {
+  order: 3;
+}
+
+.parrafo-two {
+  order: 4;
+}
+
+.parrafo-three {
+  order: 5;
+}
+
+.parrafo-four {
+  order: 6;
+}
+
+.parrafo-five {
+  order: 7;
+}
+
+.parrafo-six {
+  order: 8;
+}
+
+.aside-one {
+  position: relative;
+  text-align: center;
+  border-radius: 5px;
+  order: 2;
+  display: block;
+  width: 100%;
+  margin: auto;
+  img {
+    border: 3px solid map-get($map: $colorPalette, $key: "borderWheat");
+    border-radius: 5px;
+    width: 100%;
+  }
+  .aside-one__parrafo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 2rem;
+    background: map-get($map: $colorPalette, $key: "lightBlack");
+    text-shadow: 5px 2px map-get($map: $colorPalette, $key: "magenta");
+    .aside-one__photo-by {
+      font-size: 1rem;
+      background: map-get($map: $colorPalette, $key: "darkBlack");
+      text-shadow: 2px 1px map-get($map: $colorPalette, $key: "magenta");
+      display: block;
+    }
+  }
+}
+
+/* --------------------------- SECTION II --------------------------- */
+/* ------------------- SLIDER SPECIALS ------------------- */
+
+.article-two {
+  position: relative;
+  margin: 0 auto 150px;
+  width: 98%;
+  max-width: 1920px;
+  &:before {
+    content: "";
+    background-image: url("../images/slider-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1;
+  }
+}
+
+.carousel-index {
+  margin-bottom: 25px;
+  .carousel-item {
+    img {
+      border: 3px solid map-get($map: $colorPalette, $key: "borderWheat");
+      height: 300px;
+      margin: 10px auto;
+    }
+  }
+}

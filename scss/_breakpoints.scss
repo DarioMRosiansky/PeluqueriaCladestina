@@ -1,0 +1,456 @@
+/*TODO -------------------------------- MEDIA-BREAKPOINTS -------------------------------- TODO*/
+
+/*? -------------------------------- PRIMER BREAK-POINT -------------------------------- */
+
+@media screen and (min-width: 450px) {
+  /* -------------------------------- PRIVACY-POLICY.HTML -------------------------------- */
+
+  .privacy-policy__heading {
+    font-size: 4.5em;
+  }
+
+  .carousel__heading {
+    font-size: 3.5em;
+  }
+}
+
+/*? -------------------------------- SECOND BREAK-POINT -------------------------------- */
+
+@media screen and (min-width: 768px) {
+  /* -------------------------------- INDEX.HTML -------------------------------- */
+  header {
+    .header-container {
+      height: 40%;
+    }
+
+    .header__updown {
+      font-size: 10rem;
+    }
+
+    .header__location {
+      font-size: $textMedium;
+    }
+  }
+
+  .headline-pages {
+    font-size: 5rem;
+  }
+
+  .article-one {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+      "subhead aside"
+      "pf1 pf2"
+      "pf3 pf4"
+      "pf5 pf6";
+    padding: 50px 15px;
+  }
+
+  .article-one-subhead {
+    grid-area: subhead;
+    text-align: center;
+    font-size: 4rem;
+    align-self: center;
+    line-height: 5rem;
+  }
+
+  .aside-one {
+    grid-area: aside;
+    .aside-one__parrafo {
+      font-size: 2.5rem;
+      .aside-one__photo-by {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .parrafo-one {
+    grid-area: pf1;
+    display: block;
+    height: 100%;
+  }
+
+  .parrafo-two {
+    grid-area: pf2;
+    height: 100%;
+  }
+
+  .parrafo-three {
+    grid-area: pf3;
+    height: 100%;
+  }
+
+  .parrafo-four {
+    grid-area: pf4;
+    height: 100%;
+  }
+
+  .parrafo-five {
+    grid-area: pf5;
+    display: block;
+    height: 100%;
+  }
+
+  .parrafo-six {
+    grid-area: pf6;
+    display: block;
+    height: 100%;
+  }
+
+  .article-two {
+    width: 95%;
+  }
+
+  /*? -------------------------------- FOOTER -------------------------------- */
+  .footer__container {
+    flex-flow: row wrap;
+  }
+  .footer__content {
+    width: 100%;
+  }
+
+  .footer__hours {
+    width: 50%;
+  }
+
+  .footer__contact {
+    width: 50%;
+  }
+
+  .footer__address {
+    width: 100%;
+  }
+
+  .footer__parrafos {
+    font-size: $textSmall;
+  }
+
+  /* -------------------------------- MENU.HTML -------------------------------- */
+
+  .menu {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    column-gap: 25px;
+  }
+
+  /* -------------------------------- EVENTS.HTML -------------------------------- */
+
+  .calendar__calendar-iframe {
+    height: 600px;
+  }
+
+  /* -------------------------------- GALLERY.HTML -------------------------------- */
+
+  .v-stretch {
+    grid-row: span 2;
+  }
+
+  .h-stretch {
+    grid-column: span 2;
+  }
+
+  .big-stretch {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  .gallery {
+    max-width: 1200px;
+  }
+
+  /* -------------------------------- PRIVACY-POLICY.HTML -------------------------------- */
+
+  .privacy-policy__heading {
+    font-size: 6.5em;
+  }
+
+  .carousel__text {
+    display: block;
+    font-size: 1.8em;
+  }
+
+  .accordion-body {
+    p {
+      text-align: left;
+    }
+  }
+}
+
+/*? -------------------------------- TERCER BREAK-POINT -------------------------------- */
+
+@media screen and (min-width: 992px) {
+  /* -------------------------------- NAVBAR -------------------------------- */
+  nav {
+    ul {
+      width: 100%;
+      max-width: 1250px;
+    }
+    .nav-bar__list-item {
+      width: 100%;
+      box-shadow: -2px -2px 0px map-get($map: $colorPalette, $key: "magenta"),
+        2px 2px 0px map-get($map: $colorPalette, $key: "neonCyan");
+      margin: 0 auto;
+      &:not(:last-child) {
+        border-bottom: none;
+      }
+      &:hover {
+        cursor: pointer;
+        background: map-get($map: $colorPalette, $key: "white");
+        color: map-get($map: $colorPalette, $key: "darkBlack");
+        box-shadow: -2px -2px 0px map-get($map: $colorPalette, $key: "neonCyan"),
+          2px 2px 0px map-get($map: $colorPalette, $key: "magenta");
+        transition: background-color 0.5s ease;
+      }
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .nav-bar__logo {
+    display: none;
+  }
+
+  .nav-bar__bg-color {
+    background: map-get($map: $colorPalette, $key: "lightBlack");
+  }
+
+  .nav-bar__list-item--not-current {
+    background: map-get($map: $colorPalette, $key: "lightBlack");
+  }
+
+  .nav-bar__list-item--current {
+    background-color: map-get($map: $colorPalette, $key: "white");
+    color: map-get($map: $colorPalette, $key: "darkBlack");
+  }
+}
+/*? -------------------------------- FORTH BREAK-POINT -------------------------------- */
+
+@media screen and (min-width: 1024px) {
+  /* -------------------------------- BACK TO THE TOP BUTTON -------------------------------- */
+  #btn-back-to-top {
+    position: fixed;
+    background: map-get($map: $colorPalette, $key: "darkBlack");
+    color: map-get($map: $colorPalette, $key: "white");
+    box-shadow: -2px -2px 0px map-get($map: $colorPalette, $key: "magenta"),
+      2px 2px 0px map-get($map: $colorPalette, $key: "neonCyan");
+    width: 45px;
+    height: 45px;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    border-radius: 50%;
+    z-index: 1;
+    &:hover {
+      color: map-get($map: $colorPalette, $key: "borderContainer");
+    }
+  }
+  /* -------------------------------- INDEX.HTML -------------------------------- */
+  .headline-pages {
+    font-size: 8rem;
+  }
+  .sub-headline {
+    font-size: 5rem;
+  }
+
+  header {
+    .header-container {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-around;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .header__updown {
+      font-size: 20rem;
+    }
+
+    .header__location {
+      font-size: 5rem;
+    }
+
+    .header__insert-coin {
+      @include display-f(row, wrap, center, center);
+      display: block;
+    }
+  }
+  .article-one {
+    grid-template-areas:
+      "subhead aside"
+      "pf1 aside"
+      "pf2 pf3"
+      "pf4 pf5"
+      "pf6 pf6";
+  }
+
+  .article-one-subhead {
+    align-self: stretch;
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  [class*="parrafo-"] {
+    text-align: left;
+    font-size: $textSmall;
+  }
+
+  .carousel-index {
+    .carousel-item {
+      img {
+        border: 3px solid map-get($map: $colorPalette, $key: "borderWheat");
+        height: 500px;
+        margin: 10px auto;
+      }
+    }
+  }
+
+  .footer__hours,
+  .footer__contact,
+  .footer__address,
+  .footer__content,
+  .footer__iframe-location {
+    padding: 25px;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .footer__container {
+    @include display-f(row, nowrap, space-around, flex-start);
+    padding: 5px 20px 0;
+    max-width: 2500px;
+    margin: auto;
+  }
+
+  .footer__parrafos {
+    font-size: $textXsmall;
+  }
+
+  .footer__list-icon {
+    &:hover {
+      color: map-get($map: $colorPalette, $key: "neonCyan");
+    }
+  }
+
+  .footer__iframe-location {
+    display: block;
+  }
+
+  /* -------------------------------- EVENTS.HTML -------------------------------- */
+
+  .events-container {
+    width: 100%;
+  }
+
+  .calendar__calendar-iframe {
+    max-width: 1000px;
+  }
+
+  .calendar__container {
+    height: 85%;
+  }
+
+  /* -------------------------------- CONTACT.HTML -------------------------------- */
+
+  .contact-us__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-us__left {
+    height: 100%;
+    margin: 0 0 0 25px;
+  }
+
+  .contact-us__right {
+    padding: 25px 40px;
+  }
+
+  .notFound {
+    flex-flow: row nowrap;
+    max-width: 1920px;
+    margin: auto;
+    width: 100%;
+    .notFound__images {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .notFound__text {
+      width: 60%;
+      h1 {
+        font-size: 6rem;
+      }
+      h2 {
+        font-size: 4rem;
+      }
+      h3 {
+        font-size: 3.5rem;
+      }
+      a {
+        font-size: $textMedium;
+        &:hover {
+          text-decoration: underline;
+          color: rgb(255, 255, 0);
+          text-shadow: 2px 2px map-get($map: $colorPalette, $key: "darkBlack");
+        }
+      }
+    }
+  }
+}
+
+/*? -------------------------------- CUARTO BREAK-POINT -------------------------------- */
+@media screen and (min-width: 1100px) {
+  /* -------------------------------- INDEX.HTML -------------------------------- */
+  .article-one-subhead {
+    align-self: center;
+    font-size: 7rem;
+    line-height: 8rem;
+  }
+}
+
+/*? -------------------------------- FIFTH BREAK-POINT -------------------------------- */
+
+@media screen and (min-width: 1400px) {
+  /* -------------------------------- INDEX.HTML -------------------------------- */
+
+  .article-one-subhead {
+    align-self: center;
+    font-size: 8rem;
+    line-height: 12rem;
+  }
+
+  .article-two {
+    .sub-headline {
+      font-size: 9rem;
+    }
+  }
+
+  /* -------------------------------- GALLERY.HTML -------------------------------- */
+
+  .gallery {
+    width: 100%;
+  }
+
+  /* -------------------------------- PRIVACY-POLICY.HTML -------------------------------- */
+
+  .privacy-policy__heading {
+    font-size: 7.5em;
+  }
+
+  .carousel-container--mb {
+    margin-bottom: 100px;
+  }
+
+  .carousel__heading {
+    font-size: $textLarge;
+  }
+
+  .carousel__text {
+    font-size: 2.5em;
+  }
+}
