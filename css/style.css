@@ -32,7 +32,7 @@ body::after {
   bottom: 0;
   z-index: -2;
   display: block;
-  background: url("../images/background.jpeg") 100%;
+  background: url("../images/gallery/gallery-img23.jpg") 100%;
   background-size: 100%
   }
 
@@ -91,23 +91,23 @@ body::after {
 
 /* --------------------------- HEADER ---------------------------*/
 header {
-  margin: 5px;
+  margin: 1px;
 }
 header .header-container {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  background: url("../images/up-down-cover.jpg");
+  background: url("../images/logopeluclandes.jpg");
   background-position: center;
   background-size: cover;
-  height: 300px;
+  height: 450px;
   width: 100%;
-  border: 0.4rem solid #faf4f4;
+  border: 0.1rem solid #faf4f4;
   border-radius: 25px;
   max-width: 2500px;
-  margin: 2px auto 5px;
-  animation: flicker 1s infinite alternate;
+  margin: 6px auto 9px;
+ /*animation: flicker 1s infinite alternate;*/
   font-family: "Tourney", cursive;
   text-transform: uppercase;
 }
@@ -129,7 +129,7 @@ header .header__insert-coin {
 header .header__img--size {
   width: 115px;
   height: 115px;
-  margin: auto 15px;
+  margin: auto 5px;
 }
 
 /* --------------------------- NAV BAR ---------------------------*/
@@ -192,7 +192,7 @@ nav .nav-bar__links-list a:hover {
   max-width: 1700px;
   height: auto;
   margin: 0 auto 150px;
-  padding: 50px;
+  padding: 10px;
   display: flex;
   flex-flow: column wrap;
   justify-content: space-around;
@@ -200,7 +200,7 @@ nav .nav-bar__links-list a:hover {
   gap: 3rem;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
-  border-radius: 50px;
+  border-radius: 40px;
 }
 
 .article-one-subhead {
@@ -214,18 +214,18 @@ nav .nav-bar__links-list a:hover {
   order: 1;
 }
 .article-one-subhead .span-subhead {
-  color: #32d8e0;
-  text-decoration: underline;
+  color: #ffffff;
+  /*text-decoration: underline;*/
 }
 
 [class*=parrafo-] {
-  font-size: 1.4em;
+  font-size: 1em;
   color: #cdcdcd;
   text-shadow: 1px 1px #7d50b9;
   padding: 25px;
   box-shadow: -3px 1px 10px #028299;
   border-radius: 12px;
-  margin: auto;
+  margin: 1em;
   text-align: center;
 }
 
@@ -253,8 +253,11 @@ nav .nav-bar__links-list a:hover {
   order: 8;
 }
 .imgcam {
-  text-align: center;
-  border-radius: 50px;
+  width: 360px;
+  border: 2px solid rgb(131, 22, 143);
+  align-items: center;
+  border-radius: 20px;
+  margin: 2em;
 }
 .aside-one {
   position: relative;
@@ -266,16 +269,20 @@ nav .nav-bar__links-list a:hover {
   margin: auto;
 }
 .aside-one img {
+  margin-top: 2em;
   border: 3px solid #f5deb3;
   border-radius: 5px;
   width: 100%;
 }
 .aside-one .aside-one__parrafo {
-  position: absolute;
+  margin-top: 2em;
+  padding: 5px;
+  position: relative;
   bottom: 0;
+  border-radius: 10px;
   width: 100%;
-  font-size: 1rem;
-  animation: parrafo 3.5s infinite alternate;
+  font-size: 1.5rem;
+  /*animation: parrafo 3.5s infinite alternate;*/
   
   background: rgba(1, 1, 1, 0.5019607843);
   text-shadow: 5px 2px #af0e7c;
