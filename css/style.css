@@ -188,7 +188,7 @@ nav .nav-bar__links-list a:hover {
 /* --------------------------- SECTION I --------------------------- */
 .article-one {
   background: rgba(1, 1, 1, 0.5019607843);
-  width: 95%;
+  width: 100%;
   max-width: 1700px;
   height: auto;
   margin: 0 auto 150px;
@@ -219,7 +219,7 @@ nav .nav-bar__links-list a:hover {
 }
 
 [class*=parrafo-] {
-  font-size: 1em;
+  font-size: em;
   color: #cdcdcd;
   text-shadow: 1px 1px #7d50b9;
   padding: 25px;
@@ -292,6 +292,12 @@ nav .nav-bar__links-list a:hover {
   background: #111010;
   text-shadow: 2px 1px #af0e7c;
   display: block;
+}
+.summary{
+  font-size: 6px;
+  
+  
+ 
 }
 
 /* --------------------------- SECTION II --------------------------- */
