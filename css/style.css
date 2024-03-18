@@ -21,6 +21,7 @@ body {
   font-weight: normal;
   background: transparent;
   
+  
 }
 
 body::after {
@@ -219,7 +220,7 @@ nav .nav-bar__links-list a:hover {
 }
 
 [class*=parrafo-] {
-  font-size: em;
+  font-size: 3em;
   color: #cdcdcd;
   text-shadow: 1px 1px #7d50b9;
   padding: 25px;
@@ -294,10 +295,16 @@ nav .nav-bar__links-list a:hover {
   display: block;
 }
 .summary{
-  font-size: 6px;
-  
-  
- 
+  font-size: 3vh;
+}
+.section{
+  font-size: 2vh;
+}
+.details{
+  padding: 15px;
+  background-color: #f6f7f8;
+  margin-bottom: 20px;
+  font-size: 3vh;
 }
 
 /* --------------------------- SECTION II --------------------------- */
