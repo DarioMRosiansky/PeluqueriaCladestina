@@ -491,13 +491,13 @@ events-container {
 
 .calendar__calendar-iframe {
   margin-bottom: 50px;
-  width: 90%;
-  height: 350px;
+  width: 98%;
+  height: 700px;
 }
 
 .calendar__container {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   background: url("../images/events.jpeg");
   border-radius: 0px;
   background-repeat: no-repeat;
