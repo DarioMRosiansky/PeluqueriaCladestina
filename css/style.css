@@ -24,6 +24,12 @@ body {
   
 }
 
+.acodeon{
+margin: 15px;
+
+
+}
+
 body::after {
   content: "";
   position:fixed;
@@ -228,6 +234,7 @@ nav .nav-bar__links-list a:hover {
   border-radius: 12px;
   margin: 1em;
   text-align: center;
+  
 }
 
 .parrafo-one {
@@ -254,7 +261,7 @@ nav .nav-bar__links-list a:hover {
   order: 8;
 }
 .imgcam {
-  width: 360px;
+  width: 350px;
   border: 2px solid rgb(131, 22, 143);
   align-items: center;
   border-radius: 20px;
@@ -299,12 +306,21 @@ nav .nav-bar__links-list a:hover {
 }
 .section{
   font-size: 2vh;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 .details{
   padding: 15px;
   background-color: #f6f7f8;
   margin-bottom: 20px;
   font-size: 3vh;
+}
+
+.acordeon-container {
+  max-width: 400px;
+  overflow-y: hidden; /* Barra de desplazamiento vertical cuando el contenido es mayor que la altura */
+  
+  padding: 10px; /* Espaciado interno */
 }
 
 /* --------------------------- SECTION II --------------------------- */
